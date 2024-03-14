@@ -1,3 +1,3 @@
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
-from .connector import InterClient
+from .connector import InterClient  # noqa: F401

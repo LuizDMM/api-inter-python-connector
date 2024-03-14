@@ -5,7 +5,10 @@
 
 import requests
 import urllib3
-from OpenSSL.crypto import PKCS12, X509, PKey
+from cryptography.hazmat.primitives.serialization.pkcs12 import (
+    PKCS12Certificate as PKCS12,
+)
+from OpenSSL.crypto import X509, PKey
 
 try:
     import urllib3.contrib.pyopenssl
